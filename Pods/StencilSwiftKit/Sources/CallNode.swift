@@ -94,3 +94,33 @@ class CallNode: NodeType {
     }
   }
 }
+
+class TestNode: NodeType {
+    let variableName: String
+    let input: String
+    let prefix: String
+
+    class func parse(_ parser: TokenParser, token: Token) throws -> NodeType {
+        let components = token.components()
+        guard components.count >= 2 else {
+            throw TemplateSyntaxError("'test' tag takes at least one argument, the name of the variable to set.")
+        }
+        let variable = components[1]
+        let input = "Input"
+        let prefix = "Prefix"
+
+        return TestNode(variableName: variable, input: input, prefix: prefix)
+    }
+
+    init(variableName: String, input: String, prefix: String) {
+        self.variableName = variableName
+        self.input = input
+        self.prefix = prefix
+    }
+
+    func render(_ context: Context) throws -> String {
+//        let result = CallableBlock(parameters: parameters, nodes: nodes)
+//        context[variableName] = result
+        return input + ":_remove_prefix:_" + prefix
+    }
+}

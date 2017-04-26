@@ -4,7 +4,7 @@ use_frameworks!
 def common_pods
   pod 'Stencil', '~> 0.8.0', :inhibit_warnings => true
   pod 'PathKit', '~> 0.8.0', :inhibit_warnings => true
-  pod 'StencilSwiftKit', '~> 1.0.0'
+  pod 'StencilSwiftKit', :git => 'https://github.com/dDomovoj/StencilSwiftKit'
   pod 'SwiftGenKit', '~> 1.0.1'
 end
 

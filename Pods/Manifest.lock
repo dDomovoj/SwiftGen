@@ -12,16 +12,25 @@ DEPENDENCIES:
   - Commander (~> 0.6.0)
   - PathKit (~> 0.8.0)
   - Stencil (~> 0.8.0)
-  - StencilSwiftKit (~> 1.0.0)
+  - StencilSwiftKit (from `https://github.com/dDomovoj/StencilSwiftKit`)
   - SwiftGenKit (~> 1.0.1)
+
+EXTERNAL SOURCES:
+  StencilSwiftKit:
+    :git: https://github.com/dDomovoj/StencilSwiftKit
+
+CHECKOUT OPTIONS:
+  StencilSwiftKit:
+    :commit: 0d5483208c90bec29aa9fad149a868e55dc41281
+    :git: https://github.com/dDomovoj/StencilSwiftKit
 
 SPEC CHECKSUMS:
   Commander: fba7c96c9e787ecc8ebe0737be875e1e18ef47ff
   PathKit: dcab05d701474011aae0e40cf892298a831f63d6
   Stencil: 6669684db0262e6eb316ce233e7e02d6df0a6cd9
-  StencilSwiftKit: fb7366766d03db6011e132bf4a845cb6cf1f27d6
+  StencilSwiftKit: 4e76312c9a9c9dd2d998425e7ca86bc3564f05ed
   SwiftGenKit: b790d9509b5c15bdd3a98f9e385c9f8f45f121ca
 
-PODFILE CHECKSUM: 13a954ce68ecb59b509f7fdb7a6fdcf121dc40e8
+PODFILE CHECKSUM: 9048381d02f7eb8224824c57d4e8909e975a3db0
 
 COCOAPODS: 1.2.1
